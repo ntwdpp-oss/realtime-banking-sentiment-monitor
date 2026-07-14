@@ -1,0 +1,11 @@
+# ถังขยะของ Python
+__pycache__/
+*.pyc
+
+# ถังขยะของ Streamlit
+.streamlit/
+
+# ในอนาคตถ้ามีการสร้างสภาพแวดล้อมจำลอง
+.venv/
+venv/
+env/
