@@ -2,7 +2,7 @@ services:
   # 1. ตัวควบคุมระบบ Kafka (Zookeeper)
   zookeeper:
     image: confluentinc/cp-zookeeper:7.5.0
-    container_name: zookeeper
+    container_name: banking-zookeeper
     ports:
       - "2181:2181"
     environment:
@@ -12,7 +12,7 @@ services:
   # 2. ระบบคิวข้อมูลสตรีมมิง (Apache Kafka)
   kafka:
     image: confluentinc/cp-kafka:7.5.0
-    container_name: kafka
+    container_name: banking-kafka
     ports:
       - "9092:9092"
     environment:
@@ -26,6 +26,6 @@ services:
   # 3. ระบบฐานข้อมูล (MongoDB)
   mongodb:
     image: mongo:latest
-    container_name: mongodb
+    container_name: banking-mongodb
     ports:
       - "27017:27017"
